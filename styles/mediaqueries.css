@@ -1,0 +1,97 @@
+/* @media (min-width: 30em) {
+    html {
+      font-size: 125%;
+    }
+  }
+  
+  @media (min-width: 40em) {
+    html {
+      font-size: 150%;
+    }
+  }
+  
+  @media (min-width: 50em) {
+    html {
+      font-size: 175%;
+    }
+  }
+  
+  @media (min-width: 60em) {
+    html {
+      font-size: 200%;
+    }
+  } */
+
+  /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .footer{
+        width: 100%;
+        height: auto;
+        margin-top: -3px;
+        overflow:hidden;
+    }
+    
+    .footer-containers{
+        background-color: #1a1b25d7;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+    }
+
+    .footer > .footer-containers > .contact {
+        width:100%;
+        order: 3;
+    }
+    
+    .footer > .footer-containers > .contact .contact-forms input{
+        height: 15px;
+        font-size: 1rem;
+        font-family: inherit;
+        display: block;
+    }
+    
+    .footer > .footer-containers > .contact .contact-forms textarea{
+        width: 70%;
+        height: 70px;
+        display: block;
+        font-size: 1rem;
+        font-family: inherit;
+        color: black;
+        resize: none;
+    
+    }
+    
+    .footer > .footer-containers > .contact input, textarea{
+        margin-top: 5px;
+    }
+
+    
+.footer > .footer-containers > .footer-social{
+    display: flex;
+    flex-direction: row;
+    order: 2;
+}
+
+.footer > .footer-containers > .footer-social .social{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.footer > .footer-containers > .footer-social .social-link a{
+    color: white;
+    text-decoration: none;
+}
+    
+  }

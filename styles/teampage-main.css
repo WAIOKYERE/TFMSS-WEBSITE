@@ -1,0 +1,32 @@
+.team-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.team-container .team-wrapper{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.team-container .team-wrapper .team-content{
+    width: 181px;
+    height: 100px;
+}
+
+.team-container .team-wrapper .team-content .person img{
+    border-radius: 30px;
+}
+.team-container .team-wrapper .team-content .name{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Trirong', serif;
+}
+

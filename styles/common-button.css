@@ -1,0 +1,25 @@
+.action-link{ 
+    background-color: #afa9a933;
+    height: 40px;
+    width: 40%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.action-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+.action-link a:hover{
+    border-bottom: 1px solid red;
+    padding: 3px;
+}
+
+.action-link:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 2px rgb(160, 155, 155);
+
+}

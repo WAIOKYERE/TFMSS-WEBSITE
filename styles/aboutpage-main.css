@@ -1,0 +1,76 @@
+body{
+    overflow-x:hidden;
+}
+ 
+.about-main{
+    background-color: rgba(255, 255, 255, 0.878);
+    margin-top:300px;
+    margin-bottom: 40px;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ .about-main .info-group{
+    width: 70%;
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+ .about-main .info-group .info-image IMG{
+    height: 400px;
+    width: 350px;
+}
+
+.about-main .info-group .info-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-main .info-group .info-container .info-header {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.about-main .info-group .info-container .info-content {
+    margin: 20px;
+    font-size: 1.3rem;
+    
+}
+
+.about-main .info-group .info-container .action-link{
+    background-color: #afa9a933;
+    height: 40px;
+    width: 40%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    background-color: #afa9a933;
+}
+
+.about-main .info-group .info-container .action-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+
+.about-main .info-group .info-container .action-link:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 2px rgb(227, 93, 93);
+
+}
+
+.about-main .info-group .info-container .action-link a:hover{
+    border-bottom: 1px solid red;
+    padding: 3px;
+}

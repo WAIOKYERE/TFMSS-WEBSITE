@@ -1,0 +1,179 @@
+.main-wrapper  {
+    width: 100%;
+    /* height: 300vh; */
+}
+
+.main-wrapper > .main-container {
+
+}
+
+.main-wrapper > .main-container  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-wrapper > .main-container  .main > .about-us{
+    background-color: rgba(219, 219, 228, 0.164);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}.main-wrapper > .main-container  .main > .about-us{
+    background-color: rgba(219, 219, 228, 0.164);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-wrapper > .main-container  .main > .about-us .head{
+    font-size: 1.5rem;
+}
+
+.main-wrapper > .main-container  .main > .about-us > .our-info{
+    width: 20%;
+    font-size: 1.3rem;
+}
+
+.main-wrapper > .main-container  .main > .about-us > .info-link{
+    background-color: #afa9a933;
+    height: 40px;
+    width: 10%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    
+}
+
+.main-wrapper > .main-container  .main > .about-us > .info-link:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.main-wrapper > .main-container  .main > .about-us > .info-link a{
+    color: rgba(97, 86, 86, 0.941);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.1rem;
+}
+
+.main-wrapper > .main-container  .main > .about-us > .info-link a:hover{
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.689);
+    font-weight: 800;
+    transition: all 0.5s;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.644);
+}
+
+.main-wrapper > .main-container > .main > .our-virtue{
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.559);
+    margin: 30px;
+}
+
+.main-wrapper > .main-container > .main > .our-virtue > .virtue-wrapper{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin: 40px;
+}
+
+.main-wrapper > .main-container > .main > .our-virtue > .virtue-wrapper img{
+    border-radius: 30px;
+    height: 250px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.main-wrapper > .main-container > .main > .our-virtue > .virtue-wrapper > .virtue-header a{
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+
+}
+.main-wrapper > .main-container > .main > .our-virtue > .virtue-wrapper > .virtue-header a:hover{
+    border-bottom: 2px solid rgba(207, 20, 20, 0.744);
+    color: rgba(255, 0, 0, 0.57);
+    width: 50%
+}
+
+.main-wrapper > .main-container > .main > .events{
+    width: 100%;
+    height: 550px;
+    background-color: rgba(243, 243, 251, 0.885);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-wrapper > .main-container > .main > .events > .event-header{
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* border-bottom: 1px solid black; */
+}
+
+.main-wrapper > .main-container > .main > .events .event-content{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-img img{
+    height: 300px;
+    width: 500px;
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description{
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link{
+    background-color: #afa9a933;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link:hover{
+    background-color: white;
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link a{
+    text-decoration: none;
+    color: black;
+    height: 20px;
+    
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link a:hover{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.764);
+    padding-bottom:5px ;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
