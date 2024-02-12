@@ -1,8 +1,7 @@
  iframe{
     width:100%;
-     height: 300px;
+     height: 400px;
      border: 0; 
-    loading: lazy
 }
 .footer{
     width: auto;
@@ -10,14 +9,12 @@
     margin: 0px;
     margin-top: -3px;
     overflow-x:hidden;
-    /* position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0; */
+    background-color: rgb(9, 193, 9);
+   
 }
 
 .footer-containers{
-    background-color: #030d1ec8;
+    background-color: #003899c8;
     color: white;
     width: 100%;
     display: flex;
@@ -27,7 +24,7 @@
 }
 
 .footer > .footer-containers > .contact {
-    width:auto;
+    width:fit-content;
 }
 
 .footer > .footer-containers > .contact .contact-forms input{
@@ -38,7 +35,7 @@
 }
 
 .footer > .footer-containers > .contact .contact-forms textarea{
-    width: 150%;
+    width: 120%;
     height: 100px;
     display: block;
     font-size: 1.1rem;
@@ -75,19 +72,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 120px;
-    
+    width: 180px; 
 }
 
 .footer > .footer-containers > .footer-social .social-link a{
     color: white;
     text-decoration: none;
+    font-size: 1.4rem;
 }
 
 .footer > .footer-containers > .footer-social .social-link a:hover{
-    background-color: aliceblue;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(31, 31, 125, 0.775);
     transition: all 0.5s;
     letter-spacing: 1px;
 }
@@ -108,7 +102,7 @@
 .footer > .footer-containers > .sitemap .nav_link a{
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .footer > .footer-containers > .sitemap .nav_link a:hover{
@@ -119,22 +113,23 @@
     letter-spacing: 1px;
 }
 
-.footer > .footer-containers > .address .logo img{
-    width: 180px;
-    height: fit-content;
-    margin-bottom: -20px;
-    filter: brightness(100%);
-    
-}
-
 .footer > .footer-containers > .address{
-    width: 200px;
+    width: fit-content;
     height: 100%;
-    margin-right: 50px;
     padding-right: 50px;
     display: flex;
     flex-direction: column;
 }
+
+.footer > .footer-containers > .address .logo img{
+    width: 130px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    filter: brightness(100%);
+    
+}
+
+
 
 .footer > .footer-containers > .address .add{
     display: flex;
@@ -142,9 +137,14 @@
     margin: 10px;
 }
 
+.add-info{
+    margin-left: 30px;
+}
+
 .footer > .footer-containers > .address a{
     text-decoration: none;
     color: white;
+    font-size: 1.4rem;
 }
 
 .footer > .footer-containers > .address a:hover{

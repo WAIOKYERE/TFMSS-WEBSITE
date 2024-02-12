@@ -1,69 +1,69 @@
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 450px){
     iframe{
         width:100%;
-         height: 180px;
+         height: 100%;
          border: 0;
 
     }
     .footer{
         width: 100%;
-        height: 698px;
-        overflow:hidden;
-  
+        height: fit-content;
     }
     
     .footer-containers{
-        background-color: #030d1ec8;
-        color: white;
-        width: 100%;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        padding-top: 70px;
+        height: 400px;
+        display: grid;
+        grid-template-rows: 0.1fr 0.5fr;
+        justify-content: center;
         
+    }
+
+    .footer > .footer-containers > .footer-social{
+        padding: 20px;
+        margin-top: 20px;
+        width: 80%;
+        flex-direction: row;
+        order: 2;  
+    }
+
+    h4{
+        display: none;
+    }
+
+    .footer > .footer-containers > .footer-social .medium{
+        display: none;
+    }
+   
+
+    .footer > .footer-containers > .footer-social .social{
+        width: 50px;
     }
     
     .footer > .footer-containers > .contact {
         display: none;
 
     }
-    
-    .footer > .footer-containers > .footer-social h4{
-        text-transform: uppercase;
-        font-size: 1.2rem;
-    }
-   
-    
-    .footer > .footer-containers > .footer-social{
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        text-align: center;
-        order: 3;
-    }
-    
-    .footer > .footer-containers > .footer-social .social{
-        width: 200px;
-    }
+     
+
     
     .footer > .footer-containers > .sitemap{
         display: none;
     }
+
     .footer > .footer-containers > .address{
-        width: 90%;
+        width: 100%;
         height: 100%;
+        padding: 0px;
         display: flex;
         flex-direction: column;
-        order: 1;
+        
     }
     
     .footer > .footer-containers > .address .logo img{
+        margin-left: 30px;
         max-width: 100%;
-        margin-left: 100px;
-        opacity: 100%;
-        order: 2;
+        opacity: 80%;
     }
     
 
