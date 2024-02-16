@@ -1,73 +1,235 @@
-.sidebar{
-    display: none;
-}
-.header > .header-container > .header-content .nav-action{
-    order: 3;
-    width: 150px;
-    height: 20px;
-    justify-items: left;
-    align-items: last;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:10px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+a {
+	color: #FFF;
 }
 
-.header > .header-container > .header-content .nav-action > .action-link{
-    border: 2px solid rgba(16, 13, 213, 0.709);
-    border-radius: 2pc;
-    margin-top: 40px;
-    width: 100px;
-    text-align: center;
-    border: 2px solid rgba(16, 13, 213, 0.709);
-    border-radius: 2pc;
-    margin-top: 40px;
-}
-header > .header-container > .header-content .nav-action > .action-link:hover{
-    border: none;
-    border-bottom:2px solid rgba(255, 0, 0, 0.702);
+
+.toggle,[id^=drop] {
+	display: none;
 }
 
-.header > .header-container > .header-content .nav-action > .action-link a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
+nav { 
+	background-color: transparent;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin:30px;
+	padding: 0;
 }
 
-.header > .header-container > .header-content .nav-action > .action-link a:hover{
-    color: rgb(255, 255, 255);
+#logo a{
+	padding: 0px;
+}
+
+#logo img {
+	float: left;
+	height: 90px;
+	margin-left: 90px;
+}
+
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: a;
+	display:inline-block;
+	background-color: transparent;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:1.5rem;
+	text-decoration:none;
+	text-shadow: 2px 2px 2px black;
+}
+
+
+
+
+nav a:hover { 
+	border-bottom: 2px solid rgb(255, 0, 0);
+    padding-bottom:3px;
     transition: all 0.3s;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px rgba(0, 0, 255, 0.737);
 }
 
-.header > .header-container > .header-content >.nav-container{
-    width: 800px;
-    height: 30px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: left;
-    text-align: left;
-}
-.header > .header-container > .header-content >.nav-container .nav-link{
-    width: 150px;
-    text-align: center;
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
 }
 
-.header > .header-container > .header-content >.nav-container .nav-link a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-shadow:1px 1px ;
-    font-size: 1.3rem;
-    
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
 }
 
-.header > .header-container > .header-content >.nav-container .nav-link a:hover{
-    color: rgb(0, 0, 0);
-    /* background-color: rgba(240, 248, 255, 0.274); */
-    padding-bottom: 5px;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.75);
-    align-items:flex-start;
-    letter-spacing: 1px;
-    transition: all 0.2s;
+
+
+
+
+
+
+
+
+@media all and (max-width : 1024px) {
+	#logo img {	
+		height: 60px;
+		margin-left: 50px;
+	}
+
+
+	nav a {
+		font-size:1.2rem;
+	}
+	
+
 }
+
+
+
+
+
+
+
+
+
+@media all and (max-width : 768px) {
+
+	#logo img {	
+		height: 70px;
+		margin: 0px;
+	}
+
+
+	nav {
+		margin: 0px;
+	}
+
+	
+	.toggle + a, .menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #000000;
+		padding:10px 15px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 30px;
+		
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+		width: 80%;
+		background-color: rgb(0, 0, 0);
+		text-align: right;
+		z-index: 999;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin:80px 30px;
+		background-color: rgba(0, 0, 0, 0.822);
+		margin:80px 30px;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 30px;
+	}
+	
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #f81d1da8;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#ffffff;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #ac2c2c; 
+	}
+
+}
+
+
+
+
+
+
+@media all and (max-width : 425px) {
+
+
+	nav ul li a{
+		margin: 10px 10px;
+	}
+
+
+	nav ul li {
+		display:block;
+		width: 100%;
+		margin-top: -10px;
+
+	}
+
+	#logo img {	
+		height: 50px;
+		margin-left: 0px;
+	}
+
+	.toggle {
+		margin-right: 15px;
+	}
+
+	[id^=drop]:checked + ul {
+		width: 100%;
+		height: 400px;
+		background-color: rgba(0, 0, 0, 0.822);
+		margin:80px 0px;
+	}
+
+}
+
+
+
