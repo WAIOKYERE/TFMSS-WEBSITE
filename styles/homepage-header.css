@@ -1,92 +1,26 @@
+
 body{
     overflow-x: hidden;
+    margin: 0px;
 }
 
-.header{
+header{
     background-image: url(../images/church_building/front_view.png) ; 
-    height: 1000px;
+    height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    border-radius: 0px 3px;
     background-size: cover;
-    overflow: hidden;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    padding: 40px;
-    display: flex;
+    margin-right: 30px;
 }
 
 .header > .header-container{
     width: 100%;
-    flex: 1;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 1;
+    display: grid;
+    grid-template-rows:1fr 2fr;
+    padding: 20px;
 }
 
 .header > .header-container > .header-content{
     display: flex;
     justify-content:space-evenly;
-}
-
-.header > .header-container > .header-content .menu-button{
-    display: none;
-}
-.header > .header-container > .header-content .logo img{
-    max-width: 250px;
-    opacity: 100%;
-    margin-top: -30px;
-    align-items: left;
-    order: 1;
-    z-index: 1;
-}
-@keyframes slideleft {
-    from{
-        transform: translate(-1000PX);
-    }
-    to{
-        transform: translate(0);
-    }
-    
-}
-.header > .header-container  >.hero-section{
-    color: rgb(0, 0, 0);
-    max-width: 40%;
-    margin-left: 150px;
-    margin-top: 150px;
-    border-left: 5px solid red;
-    animation: slideleft;
-    animation-duration: 4s;  
-    animation: slideleft;
-    animation-duration:5s;
-}
-
-.header > .header-container  >.hero-section > .hero {
-    margin-left:20px ;
-    text-align: left;
-
-}
-
-.header > .header-container  >.hero-section > .hero > .container h1{
-   font-size: 2.3rem;
-    justify-content: last baseline;
-    animation: slideleft;
-    animation-duration: 3s;
-    
-}
-.header > .header-container  >.hero-section > .hero > .container p{
-    font-family: 900;
-    font-size: 1.8rem;
-    animation: slideleft;
-    animation-duration: 5s;
-    
 }
