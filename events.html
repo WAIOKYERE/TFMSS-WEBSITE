@@ -7,6 +7,7 @@
         <meta name="viewport"  content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/nav.css">
         <link rel="stylesheet" href="./styles/common-header.css">
+        <link rel="stylesheet" href="./styles/eventBody.css">
         <link rel="stylesheet" href="./styles/footerButtons.css">
         <link rel="stylesheet" href="./styles/footer.css">
         <link rel="stylesheet" href="./styles/footer-mediaqueries.css">
@@ -44,21 +45,56 @@
                         <div class="page-name">
                             <h2>OUR EVENTS</h2>
                         </div>
-    
-
-                </div>
+                    </div>
             </div>
         </div>
 
 
         <div class="event-body-wrapper">
 
-            sdhfdbf
+            <div class="container">
+            <h2>Next Events</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img src="./images/others/Frimpraise Aldersgate Singers 4.jpg" style="width:100%">
+                <div class="text">Event 1</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="./images/flyers/Upcoming Events Music Fest Story - Made with PosterMyWall (1).jpg" style="width:100%">
+                <div class="text">Event 2</div>
+                </div>
+
+                <div class="mySlides fade">
+                <img src="./images/flyers/freeman revival.jpg" style="width:100%">
+                <div class="text">Event 3</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="event">
+                <h2>Event 1</h2>
+                <p class="date">January 25, 2024</p>
+                <p class="location">Location: New York City</p>
+                <p class="description">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est a nunc dapibus auctor.</p>
+            </div>
+            
+            <div class="event">
+                <h2>Event 2</h2>
+                <p class="date">February 10, 2024</p>
+                <p class="location">Location: San Francisco</p>
+                <p class="description">Description: Nulla ultrices eros nec metus condimentum, eu convallis risus consequat. Proin in metus in lorem feugiat malesuada.</p>
+            </div>
+            
+            <div class="event">
+                <h2>Event 3</h2>
+                <p class="date">March 5, 2024</p>
+                <p class="location">Location: London</p>
+                <p class="description">Description: Fusce at lectus eget lorem aliquam consequat non et nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+            </div>
         </div>
-
-
-
-
 
         <footer class="footer">
             <div class="footer-containers">
@@ -192,7 +228,9 @@
         
         <div class="copyright">
             &copy; 2024 TFMSS all rights reserved
-          </div>
-      
+        </div>
+
+        <script src="./script/eventBody"></script>   
+        
     </body>
 </html>
