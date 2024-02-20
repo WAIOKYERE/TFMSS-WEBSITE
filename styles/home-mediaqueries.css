@@ -6,32 +6,10 @@
         margin: 0px;
         padding: 0px;
 }
-        .header > .header-container {
-            width: 100%;
-            height: 500px;
-            overflow:hidden;
-        }
 
-        .header > .header-container > .header-content{
-            justify-content:flex-start;
-        }
+     
 
-        
-        .header > .header-container > .header-content .nav-action{
-
-
-        }
-        .header > .header-container > .header-content >.nav-container{
-            display: flex;
-            flex-direction: column;
-            display:none;
-        }
-
-        .header > .header-container > .header-content > .logo img{
-            max-width: 150px;
-            margin: 0px;
-        
-        }
+   
 
         @keyframes slideleft {
             from{
@@ -40,43 +18,6 @@
             to{
                 transform: translate(0) ;
             }
-        }
-
-        .header > .header-container  >.hero-section{
-            color: rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.259);
-            max-width: 90%;
-            height: fit-content;
-            margin-left: 20px;
-            margin-top: 0px;
-            border-left: 5px solid rgb(255, 0, 0);
-            animation: slideleft;
-            animation-duration:5s;
-        }
-   
-        
-            .header > .header-container  >.hero-section > .hero > .container h1{
-            font-size: 1.3rem;
-            animation: slideleft;
-            animation-duration: 2s;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600 ;
-}
-
-        .header > .header-container  >.hero-section > .hero > .container p{
-            font-size: 1.2rem;
-            animation: slideleft;
-            animation-duration: 5s;
-            font-weight: 500 ;
-            
-        }
-
-        .header > .header-container > .header-content .sidebar .nav-link a{
-            text-decoration: none;
-            width: 100%;
-            color: rgb(0, 0, 0);
-            font-weight: 700;
-            font-size: 1.4rem;
         }
 
 
@@ -92,13 +33,13 @@
         .main-wrapper > .main-container  .main > .about-us .head{
             font-size: 1rem;
             font-weight: 700 ;
+            text-decoration: underline;
         }
   
         .main-wrapper > .main-container  .main > .about-us > .info-link{
-            background-color: #afa9a933;
-            width: 150px;
-            height: 30px;
-            margin-bottom: 5px;
+            width: max-content;
+            height: 50px;
+            margin-bottom: 10px;
         }
         
     
@@ -164,10 +105,8 @@
 }
 
 .main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link{
-    background-color: #afa9a975;
-    height: 30px;
-    width: 40%;
-    border-radius: 30px;
+    height: 50px;
+    width: max-content;
 }
 
 
@@ -255,17 +194,14 @@
         
        
         .main-wrapper > .main-container  .main > .about-us > .our-info{
-            width: 80%;
+            width: 90%;
             font-size: 1rem;
         }
         
-        .main-wrapper > .main-container  .main > .about-us > .info-link{
-            width: 150px;
-            padding-top: 5px;
-        }
-
+        
+ 
 .main-wrapper > .main-container > .main > .our-virtue{
-    width: 70%;
+    width: 80%;
     height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -298,10 +234,10 @@
 }
 
 .main-wrapper > .main-container > .main > .events .event-content{
-    width: 90%;
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .main-wrapper > .main-container > .main > .events > .event-content > .event-img img{
@@ -310,22 +246,15 @@
 }
 
 .main-wrapper > .main-container > .main > .events > .event-content > .event-description{
-    width: 100%;
-    margin: auto;
-    color: rgb(0, 0, 0);
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    width: 90%;
+    font-size: 1rem;
+
 }
 
 .main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link{
-    margin: 0;
-    width: 150px;
-    padding-top: 8px;
-    padding-left: 15px;
+    width: max-content;
+    padding-top: 10px;
+ 
 }
 
     .activity-container .meetings-wrapper .meetings-hrs {
@@ -340,10 +269,14 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .map iframe{
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
 }
+
+
 }
 
 
@@ -356,10 +289,63 @@
 
 
 
-  /* @media (min-width: 1601px) {
-    body {
-      background-color: seagreen;
-    }
-  } */
+
+
+
+
+
+
+
+ @media all and (max-width : 768px) {
+
+
+
+.main-wrapper > .main-container  .main > .about-us .head{
+    text-decoration: underline;
+}
+
+.main-wrapper > .main-container  .main > .about-us > .our-info{
+    width: 90%;
+    font-size: 1.3rem;
+}
+
+
+
+
+.main-wrapper > .main-container > .main > .events .event-content{
+    width: 100%;
+}
+
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description{
+    width: 100%;
+    text-align: center;
+ 
+}
+
+.main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link{
+
+    width: max-content;
+    height: 50px;
+    padding-top: 5px;
+    padding: 0.7em 1.7em;
+
+
+}
+
+
+.map iframe{
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+
+
+}
+
+
+
+
 
 

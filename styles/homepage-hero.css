@@ -1,0 +1,106 @@
+
+@keyframes slideleft {
+    from{
+        transform: translate(-1000PX);
+    }
+    to{
+        transform: translate(0);
+    }
+    
+}
+.header > .header-container  > .Welcome-note{
+    color: rgb(0, 0, 0);
+    max-width: 40%;
+    height: fit-content;
+    margin-left: 30px;
+    margin-top: 80px;
+    border-left: 5px solid rgb(255, 0, 0);
+    animation: slideleft;
+    animation-duration: 4s;  
+    animation: slideleft;
+    animation-duration:5s;
+}
+
+
+.header > .header-container  >.Welcome-note > .Welcome-message > .container h1{
+   font-size: 2rem;
+    justify-content: last baseline;
+    animation: slideleft;
+    animation-duration: 3s;
+    margin-left: 10px;
+    
+}
+
+.header > .header-container >.Welcome-note > .Welcome-message > .container p{
+    font-family: 900;
+    font-size: 1.8rem;
+    animation: slideleft;
+    animation-duration: 5s;
+    margin-left: 10px;
+
+}
+
+
+
+@media all and (max-width : 1024px) {
+    .header > .header-container  > .Welcome-note{
+        max-width: 50%;
+        height: fit-content;
+        margin-left: 30px;
+        margin-top: 0px;
+        
+    }
+
+    .header > .header-container  >.Welcome-note > .Welcome-message > .container h1{
+        font-size: 1.5rem;   
+     }
+    
+
+    .header > .header-container >.Welcome-note > .Welcome-message > .container p{
+        font-family: 900;
+        font-size: 1.2rem;
+  
+    }
+
+}
+
+
+@media all and (max-width : 768px) {
+    .header > .header-container  > .Welcome-note{
+        max-width: 70%;
+        margin-left: 40px;
+        margin-top: 10px;
+  
+    }
+
+    .header > .header-container  >.Welcome-note > .Welcome-message > .container h1{
+        font-size: 1.7rem; 
+        font-weight: 700;
+         }
+    
+
+    .header > .header-container >.Welcome-note > .Welcome-message > .container p{
+        font-size: 1.2rem;
+        font-weight: 500;
+  
+    }
+}
+
+
+@media all and (max-width : 455px) {
+    .header > .header-container  > .Welcome-note{
+        max-width: fit-content;
+        margin: 0px;
+    }
+
+    .header > .header-container  >.Welcome-note > .Welcome-message > .container h1{
+        font-size: 1.2rem;   
+     }
+    
+
+    .header > .header-container >.Welcome-note > .Welcome-message > .container p{
+        font-family: 900;
+        font-size: 1rem;
+  
+    }
+}

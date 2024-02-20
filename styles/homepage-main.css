@@ -36,10 +36,18 @@
 
 .main-wrapper > .main-container  .main > .about-us > .info-link{
     background-color: #afa9a933;
-    width: 180px;
-    height: 40px;
+    width: max-content;
+    height: 50px;
     border-radius: 30px;
-    margin-bottom: 20px;
+    padding-top: 5px;
+    padding: 0.7em 1.7em;
+    font-size: 15px;
+    background: #c7b7b721;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #ff7676, -6px -6px 12px #ffffff;  
+
     
 }
 
@@ -141,10 +149,18 @@
 
 .main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link{
     background-color: #afa9a933;
-    width: 180px;
-    height: 40px;
+    width: max-content;
+    height: 50px;
     border-radius: 30px;
-    margin-bottom: 20px;
+    padding-top: 5px;
+    padding: 0.7em 1.7em;
+    font-size: 15px;
+    background: #c7b7b721;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #ff7676, -6px -6px 12px #ffffff;  
+
 }
 .main-wrapper > .main-container > .main > .events > .event-content > .event-description .event-link:hover{
     background-color: white;

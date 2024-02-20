@@ -1,0 +1,24 @@
+.footer > .footer-containers > .contact .contact-forms .centered-button-wrapper .btn{
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    height: 40px;
+    width: 50%;
+    color: black;
+    padding: 0.7em 1.7em;
+    font-size: 15px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #320eb6;  
+
+}
+
+.footer > .footer-containers > .contact .contact-forms .centered-button-wrapper .btn:hover{
+    background-color: rgba(255, 255, 255, 0.533);
+    color: #332424;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 5px rgba(20, 16, 255, 0.601);
+    transition: all 0.3s;
+}
