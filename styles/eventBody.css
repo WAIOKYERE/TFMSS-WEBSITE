@@ -1,11 +1,20 @@
-  .event-body-wrapper{
+ html, body{
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+ }
+ 
+ .event-body-wrapper{
     width: 100%;
     height: auto;
     margin: auto;
   }
 
   .container {
-    max-width: 90%;
+    max-width: 70%;
     margin: 50px auto;
     padding: 20px;
   }
@@ -43,9 +52,16 @@
     display: block;
   }
 
+  .text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
   .slideshow-container {
-    max-width: 100%;
+    max-width: 50%;
     position: relative;
+    margin: auto;
     margin-top: 20px; 
   }
   
@@ -58,6 +74,11 @@
     max-height: 500px; 
     object-fit:cover;
     border-radius: 20px;
+  }
+
+  .two{
+    width:100% ;
+    margin:auto;
   }
   
   .prev, .next {
@@ -85,12 +106,90 @@
   .next:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  .tableTitle{
+    color: #242121;
+  }
+
+.table-container {
+    overflow-x: auto;
+    padding-left: 15%;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 2px solid #061fff;
+    text-align: left;
+}
+
+th {
+    background-color: #a7353511;
+    color: #242121;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .tableTitle{
+    margin-left: 100%;
+  }
+
+   .table-container {
+    width: 100%;
+    padding: 5%;
+    }
+     
+    table{
+      width: 90%;
+      box-shadow: 0 3px 4px rgba(48, 46, 46, 0.3);
+      border-radius: 5px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        margin: auto;
+    }
+
+    td:nth-of-type(1):before { content: "Bible Verse: "; }
+    td:nth-of-type(2):before { content: "Teacher: "; }
+    td:nth-of-type(3):before { content: "Helper: "; }
+}
+
   
   
   
   @media screen and (max-width: 768px) {
     .event {
-      width: 100%;
+      width: 70%;
       margin-bottom: 30px;
     }
   
@@ -113,6 +212,10 @@
   @media screen and (max-width: 480px) {
     .mySlides img {
       max-height: 400px; 
+    }
+
+    .event {
+      width: 90%;
     }
   
     .prev,
