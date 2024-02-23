@@ -9,7 +9,7 @@
  
  .event-body-wrapper{
     width: 100%;
-    height: auto;
+    height: max-content;
     margin: auto;
   }
 
@@ -17,6 +17,13 @@
     max-width: 70%;
     margin: 50px auto;
     padding: 20px;
+  }
+
+  .countdown {
+    font-size: 32px;
+    margin: 10px;
+    color: #eb6666;
+    text-align: center;
   }
   
   .event {
@@ -135,6 +142,18 @@ th {
     text-align: center;
 }
 
+
+.noBorder a{
+  color: rgb(255, 255, 255);
+  background-color: #ec0909c4;
+  margin-left: 20px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+
 @media only screen and (max-width: 600px) {
 
   .tableTitle{
@@ -179,9 +198,14 @@ th {
         margin: auto;
     }
 
+    .noBorder a{
+      color: red;
+    }
+
     td:nth-of-type(1):before { content: "Bible Verse: "; }
     td:nth-of-type(2):before { content: "Teacher: "; }
     td:nth-of-type(3):before { content: "Helper: "; }
+    td:nth-of-type(4):before { content: "Her: "; }
 }
 
   
@@ -207,6 +231,13 @@ th {
       font-size: 18px;
       padding: 10px;
     }
+
+    .docWrapper{
+      width: 70%;
+      display: block;
+      align-content: center;
+      margin: auto;
+    }
   }
   
   @media screen and (max-width: 480px) {
@@ -223,6 +254,32 @@ th {
       font-size: 1.8rem;
       padding: 8px;
     }
+
+    body {
+      height: 600vh;
+    }
+
+    .tableTwo .noBorder th{
+      background-color: rgb(238, 239, 245);
+      display: block;
+      margin-top: 15px;
+      height: 50px;
+      padding: 5px;
+    }
+
+
+
+.noBorder a{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin: auto;
+  margin-top:2px;
+  width: 40%;
+  padding: 4px;
+  display: block;
+}
+
+    
   }
   
   
