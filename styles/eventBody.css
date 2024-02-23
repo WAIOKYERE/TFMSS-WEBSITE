@@ -256,7 +256,7 @@ th {
     }
 
     body {
-      height: 450vh;
+      height: fit-content;
     }
 
     .tableTwo .noBorder th{
