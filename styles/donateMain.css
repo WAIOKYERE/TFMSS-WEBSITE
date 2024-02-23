@@ -1,26 +1,20 @@
-.contact-container {
+.donate-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
     text-align: center;
   }
   
-  .contact-info,
-  .contact-form,
+  .donate-info,
+  .donate-form,
+  .organization-info,
   .social-links {
     margin-bottom: 40px;
   }
   
-  .contact-info div,
-  .social-links ul {
-    display: inline-block;
-    text-align: left;
-    margin: 0 20px;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
+  .donate-form input[type="text"],
+  .donate-form input[type="email"],
+  .donate-form input[type="number"] {
     width: calc(100% - 40px);
     padding: 10px;
     margin-bottom: 20px;
@@ -29,11 +23,7 @@
     box-sizing: border-box;
   }
   
-  .contact-form textarea {
-    resize: vertical;
-  }
-  
-  .contact-form button {
+  .donate-form button {
     width: 100%;
     background-color: #007bff;
     color: #fff;
@@ -44,7 +34,7 @@
     transition: background-color 0.3s ease;
   }
   
-  .contact-form button:hover {
+  .donate-form button:hover {
     background-color: #0056b3;
   }
   
@@ -81,16 +71,9 @@
   }
   
   @media (max-width: 768px) {
-    .contact-info div,
-    .social-links ul {
-      display: block;
-      margin: 0 auto 20px;
-      text-align: center;
-    }
-  
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
+    .donate-form input[type="text"],
+    .donate-form input[type="email"],
+    .donate-form input[type="number"] {
       width: calc(100% - 20px);
     }
   }
