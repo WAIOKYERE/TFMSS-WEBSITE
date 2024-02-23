@@ -112,6 +112,7 @@
 .activity-container{
     display: grid;
     grid-template-columns: 1fr;
+    height: fit-content;
     
 }
 
