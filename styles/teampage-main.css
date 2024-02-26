@@ -49,7 +49,7 @@
 
     .team-container .team-wrapper{
         width: 100%;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows:repeat(2,1fr);
         justify-items: center;
     }
@@ -59,18 +59,18 @@
   @media screen and (max-width: 768px) {
 
     .team-container{
-        width: 90%;
+        width: 100%;
         height: 1500px;
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 10px;
         margin: auto;
         margin-bottom: 50px;
     }
 
     .team-container .team-wrapper{
         width: 100%;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows:repeat(2,1fr);
         justify-items: center;
     }
@@ -84,25 +84,31 @@
     }
         .team-container{
             row-gap: 50px;
+            height: 1800px;
         }
     
         .team-container .team-wrapper{
             width: 100%;
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows:repeat(3,1fr);
+            grid-template-rows:repeat(4,1fr);
             justify-items: center;
-            gap: 50px;
+            gap: 20px;
         }
 
         
 .team-container .team-wrapper .team-content{
-    width: 130px;
-    height: 120px;
+    width: 120px;
+    height: 110px;
+    margin-bottom: 100px;
 }
 
 .team-container .team-wrapper .team-content .person img{
-    width: 150px;
+    width: 130px;
 
+}
+
+.right{ 
+    margin-top: 200px;
 }
 }
   
