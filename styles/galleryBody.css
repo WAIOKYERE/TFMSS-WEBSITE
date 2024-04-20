@@ -5,7 +5,7 @@
   
   .gallery {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
     gap: 10px;
   }
   
@@ -15,6 +15,10 @@
   
   .gallery-section h2 {
     margin-bottom: 10px;
+  }
+
+  h2{
+    font-size: 40px;
   }
   
   .gallery-items {
