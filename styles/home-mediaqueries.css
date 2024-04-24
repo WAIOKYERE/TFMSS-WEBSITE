@@ -161,7 +161,7 @@
     }
     
     .header > .header-container > .header-content >.nav-container .nav-link{
-        width: fit-content;
+        width: auto;
         margin: 0px;
         padding: 0px;
     }

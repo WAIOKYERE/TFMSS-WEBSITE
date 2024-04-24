@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/common-header.css">
-    <link rel="stylesheet" href="./styles/galleryBody.css">
     <link rel="stylesheet" href="./styles/gallery.css">
     <link rel="stylesheet" href="./styles/footerButtons.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -24,7 +23,8 @@
 <body>
     <div class="about-body-container" id="block">
         <div class="about-body-wrapper">
-            <div class="about-header" style="background-image: url(./images/Team/gallery\ 4.png);">
+            <div class="about-header"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/Team/gallery\ 4.png);">
                 <div class="header-content">
 
                     <div id="logo" id="common-logo">
@@ -58,299 +58,301 @@
             <div class="gallery">
                 <div class="container">
 
-
-
-
                     <h1>Image Gallery</h1>
-                    <hr>
-                    <div id="gallery" class="container-fluid">
+                    <div id="gallery" class="container-fluid thumbnails">
                         <img src="./images/Sunday School/Ofori.jpg" class="img-responsive">
                         <img src="./images/Sunday School/Bismarck.jpg" class="img-responsive">
                         <img src="./images/Sunday School/Teens class.jpg" class="img-responsive">
-                        <!-- <video class="vid" controls>
-                            <source
-                                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                                type="video/mp4">
-                            </source>
-                        </video> -->
-                        <img src="./images/others/Brigade boys.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240422-WA0022.jpg" class="img-responsive">
                         <img src="./images/Sunday School/photo_2024-04-20_03-21-18.jpg" class="img-responsive">
-                        <img src="./images/others/Sunday school Dancers.jpg" class="img-responsive">
-                        <img src="./images/others/freeman junior choir instrumentals 4.jpg" class="card img-responsive">
+                        <img src="./images/Sunday School/IMG-20240422-WA0024.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240422-WA0025.jpg" class="card img-responsive">
                         <img src="./images/others/senir Dancing 3.jpg" class="img-responsive">
                         <img src="./images/others/Min Frank Frimpong.jpg" class="img-responsive">
-                        <img src="./images/flyers/Upcoming Events Music Fest Story - Made with PosterMyWall (1).jpg"
-                            class="img-responsive">
+                        <img src="./images/flyers/Upcoming Events Music Fest Story - Made with PosterMyWall (1).jpg"class="img-responsive">
                         <img src="./images/others/freeman junior choir instrumentals.jpg" class="img-responsive">
                         <img src="./images/others/Sup Min 2.jpg" class="img-responsive">
-                        <img src="./images/others/Aldersgate Singers.jpg" class="img-responsive">
-                        <img src="./images/others/Madam Cynthia.jpg" class="img-responsive">
-                        <img src="./images/Team/Wai.png" class="img-responsive">
-                        <img src="./images/Sunday School/Teens class.jpg" class="img-responsive">
-
+                        <img src="./images/Sunday School/IMG-20240424-WA0004.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0007.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0008.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0009.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0010.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0011.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0012.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0013.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0014.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0015.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0016.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0017.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0018.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0019.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0020.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0021.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0022.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/IMG-20240424-WA0023.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/photo_2024-04-20_03-21-06.jpg" class="img-responsive">
+                        <img src="./images/Sunday School/photo_2024-04-20_03-21-13.jpg" class="img-responsive">
+                         <img src="./images/others/Madam Cynthia.jpg" class="img-responsive">
+                      
                     </div>
 
-                    <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
+                    <div class="preview-container">
+                        <span class="close">&times;</span>
+                        <img class="preview-image">
+                        <span class="prev">&lt;</span>
+                        <span class="next">&gt;</span>
+                    </div>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>Videos</h2>
+                    <div class="gallery-items">
+
+                        <div class="vidContainer">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 2</div>
+                                <video controls class="gallery-item">
+                                    <source src="./Videos/Children's Week/Chldren's Week 24 Drama.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
 
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 2</div>
+                                <video controls class="gallery-item">
+                                    <source src="./Videos/Children's Week/Dennis interview.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+
+                            <a class="vidPrev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="vidNext" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!-- Video text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="./images/thumbnails/Children's week thumbnail.png"
+                                        style="width:100%" onclick="currentSlide(1)" alt="Childern's Week '24">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor"
+                                        src="./images/thumbnails/Children's week thumbnail- preacher.png"
+                                        style="width:100%" onclick="currentSlide(2)" alt="Dennis">
+                                </div>
+                                <!-- <div class="column">
+                                <img class="demo cursor" src="img_mountains.jpg" style="width:100%"
+                                    onclick="currentSlide(3)" alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
+                                        alt="Northern Lights">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
+                                        alt="Nature and sunrise">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)"
+                                        alt="Snowy Mountains">
+                                </div> -->
+                            </div>
                         </div>
+
                     </div>
+                </div>
+                
 
-
-
-
-
-
-
-                    <!-- <h2>Images</h2>
-                    <div class="row">
-                        <a href="./images/Sunday School/Ofori.jpg" data-toggle="lightbox" data-gallery="gallery"
-                            class="col-md-4">
-                            <img src="./images/Sunday School/Ofori.jpg" class="img-fluid rounded">
+                <div class="gallery-section">
+                    <h2>Bible Stories</h2>
+                    <div class="gallery-items stories">
+                        <a href="https://youtu.be/Aqk-5gvyHCM?si=Ez1c555TBodZTF4S" target="_blank" class="gallery-item">
+                            <img src="./Videos/Thumbnails/youtube-thumbnail-Joseph.png" alt="YouTube Video 1">
                         </a>
-                        <a href="./images/Sunday School/Teens class.jpg" data-toggle="lightbox" data-gallery="gallery"
-                            class="col-md-4">
-                            <img src="./images/Sunday School/Teens class.jpg" class="img-fluid rounded">
-                        </a>
-                        <a href="./images/Sunday School/Bismarck.jpg" data-toggle="lightbox" data-gallery="gallery"
-                            class="col-md-4">
-                            <img src="./images/Sunday School/Bismarck.jpg" class="img-fluid rounded">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="./images/others/Brigade boys.jpg" data-toggle="lightbox" data-gallery="gallery"
-                            class="col-md-4">
-                            <img src="./images/others/Brigade boys.jpg" class="img-fluid rounded">
-                        </a>
-                        <a href="./images/others/senir Dancing 3.jpg" data-toggle="lightbox" data-gallery="gallery"
-                            class="col-md-4">
-                            <img src="./images/others/senir Dancing 3.jpg" class="img-fluid rounded">
-                        </a>
-                        <a href="./images/others/Sunday Scholl Children Dancing.jpg" data-toggle="lightbox"
-                            data-gallery="gallery" class="col-md-4">
-                            <img src="./images/others/Sunday Scholl Children Dancing.jpg" class="img-fluid rounded">
-                        </a>
-                    </div>
-                </div> -->
 
-                    <!-- 
-                <div class="gallery-section images">
-
-                    <div class="gallery-items pictures">
-                        <img src="./images/others/Sup Min.jpg" alt="Image 1" class="gallery-item">
-                        <img src="./images/others/Madam Cynthia.jpg" alt="Image 2" class="gallery-item">
-                        <img src="./images/others/Min Frank Frimpong 2.jpg" alt="Evangelist Frank Frempomg"
+                        <a href="https://https://youtu.be/V_zhrItaLok?si=fXdX8eeYVnaZrvqY" target="_blank"
                             class="gallery-item">
-                        <img src="./images/others/freeman junior choir instrumentals 4.jpg" alt="Image 4"
-                            class="gallery-item" style="height: 250px;">
-                        <img src="./images/others/Sunday Scholl Children Dancing.jpg" alt="Image 5" class="gallery-item"
-                            style="height: 400px;">
-                    </div>
-                </div> -->
-
-                    <div class="gallery-section">
-                        <h2>Videos</h2>
-                        <div class="gallery-items">
-                            <video controls class="gallery-item">
-                                <source src="./Videos/Children's Week/Chldren's Week 24 Drama.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <video controls class="gallery-item">
-                                <source src="./Videos/Children's Week/Dennis interview.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            <img src="./Videos/Thumbnails/youtube-thumbnail-Ruth.png" alt="YouTube Video 2">
+                        </a>
+                        <a href="https://youtu.be/FpKbsbyEPPQ?si=4HZ00QSpvOAuzjW5" target="_blank" class="gallery-item">
+                            <img src="./Videos/Thumbnails/youtube-thumbnail-The Jim Elliot Story.png"
+                                alt="YouTube Video 2">
+                        </a>
                     </div>
 
-                    <div class="gallery-section">
-                        <h2>YouTube</h2>
-                        <div class="gallery-items">
-                            <a href="https://youtu.be/Aqk-5gvyHCM?si=Ez1c555TBodZTF4S" target="_blank"
-                                class="gallery-item">
-                                <img src="./Videos/Thumbnails/youtube-thumbnail-Joseph.png" alt="YouTube Video 1">
-                            </a>
-                            <a href="https://https://youtu.be/V_zhrItaLok?si=fXdX8eeYVnaZrvqY" target="_blank"
-                                class="gallery-item">
-                                <img src="./Videos/Thumbnails/youtube-thumbnail-Ruth.png" alt="YouTube Video 2">
-                            </a>
-                            <a href="https://youtu.be/FpKbsbyEPPQ?si=4HZ00QSpvOAuzjW5" target="_blank"
-                                class="gallery-item">
-                                <img src="./Videos/Thumbnails/youtube-thumbnail-The Jim Elliot Story.png"
-                                    alt="YouTube Video 2">
-                            </a>
-                        </div>
+                    <div class="gallery-items iframeContainer">
+                        <h2>Movies</h2>
 
-                        <div class="gallery-items iframeContainer">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube-nocookie.com/embed/1USWVZjTRw8?si=5-WQJ9CQXQG8_PFy"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen>
-                            </iframe>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube-nocookie.com/embed/Aqk-5gvyHCM?si=NN7ktZLOgd-7aJhC"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/1USWVZjTRw8?si=5-WQJ9CQXQG8_PFy"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/Aqk-5gvyHCM?si=NN7ktZLOgd-7aJhC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
                     </div>
+
                 </div>
             </div>
+        </div>
 
 
 
-            <footer class="footer">
-                <div class="footer-containers">
-                    <div class="contact">
-                        <div class="contact-text">
-                            <h3>Contact Us</h3>
+        <footer class="footer">
+            <div class="footer-containers">
+                <div class="contact">
+                    <div class="contact-text">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="contact-forms">
+                        <div class="form-group">
+                            <input type="text" id="FullName" placeholder="Your Name">
                         </div>
-                        <div class="contact-forms">
-                            <div class="form-group">
-                                <input type="text" id="FullName" placeholder="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" placeholder="Your email">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
 
-                            <div class="centered-button-wrapper">
-                                <button type="submit" class="btn"> SEND</button>
-                            </div>
+                        <div class="centered-button-wrapper">
+                            <button type="submit" class="btn"> SEND</button>
                         </div>
                     </div>
+                </div>
 
-                    <div class="footer-social">
-                        <div>
-                            <h4>Our Social Media</h4>
-                        </div>
-                        <div class="social-link">
-                            <a href="#">
-                                <div class="social">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                    <div class="medium">
-                                        facebook
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="#">
-                                <div class="social">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <div class="medium">
-                                        instagram
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="#">
-                                <div class="social">
-                                    <i class="fa-brands fa-tiktok"></i>
-                                    <div class="medium">
-                                        tiktok
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="#">
-                                <div class="social">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                    <div class="medium">
-                                        twitter
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                <div class="footer-social">
+                    <div>
+                        <h4>Our Social Media</h4>
                     </div>
-
-                    <div class="sitemap">
-                        <div>
-                            <h3>Sitemap</h3>
-                        </div>
-                        <div class="linkswrapper">
-                            <div class="nav_link">
-                                <a href="index.html">Home</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="about.html">About Us</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="events.html">News/Events</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="gallery.html">Gallery</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="program.html">Programs List</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="team.html">Our Team</a>
-                            </div>
-                            <div class="nav_link">
-                                <a href="contact.html">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="address">
-                        <a href="index.html">
-                            <div class="logo">
-                                <img src="./images/logos/tfmss logo.png">
-                            </div>
-                        </a>
-
-                        <a href="tel:+233 555 555 555">
-                            <div class="add">
-                                <i class="fas fa-phone-volume"></i>
-                                <div class="add-info">
-                                    +233 555 555 5555
+                    <div class="social-link">
+                        <a href="#">
+                            <div class="social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <div class="medium">
+                                    facebook
                                 </div>
                             </div>
                         </a>
-
-                        <a href="mailto:someone@example.com">
-                            <div class="add">
-                                <i class="fa-solid fa-envelope"></i>
-                                <div class="add-info">
-                                    freeman@gmail.com
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="https://maps.app.goo.gl/hwBLK3vkq8tDZAr89" target="_blank">
-                            <div class="add">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div class="add-info">
-                                    Obuasi - Tutuka
-                                </div>
-                            </div>
-                        </a>
-
                     </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <div class="social">
+                                <i class="fa-brands fa-instagram"></i>
+                                <div class="medium">
+                                    instagram
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <div class="social">
+                                <i class="fa-brands fa-tiktok"></i>
+                                <div class="medium">
+                                    tiktok
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <div class="social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <div class="medium">
+                                    twitter
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sitemap">
+                    <div>
+                        <h3>Sitemap</h3>
+                    </div>
+                    <div class="linkswrapper">
+                        <div class="nav_link">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="events.html">News/Events</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="program.html">Programs List</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="team.html">Our Team</a>
+                        </div>
+                        <div class="nav_link">
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="address">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="./images/logos/tfmss logo.png">
+                        </div>
+                    </a>
+
+                    <a href="tel:+233 555 555 555">
+                        <div class="add">
+                            <i class="fas fa-phone-volume"></i>
+                            <div class="add-info">
+                                +233 555 555 5555
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="mailto:someone@example.com">
+                        <div class="add">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="add-info">
+                                freeman@gmail.com
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/hwBLK3vkq8tDZAr89" target="_blank">
+                        <div class="add">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="add-info">
+                                Obuasi - Tutuka
+                            </div>
+                        </div>
+                    </a>
 
                 </div>
 
-                <div class="copyright" style="text-align: center; background-color: rgb(255, 255, 255); ">
-                    &copy; 2024 TFMSS All Rights Reserved
-                </div>
+            </div>
 
-            </footer>
+            <div class="copyright" style="text-align: center; background-color: rgb(255, 255, 255); ">
+                &copy; 2024 TFMSS All Rights Reserved
+            </div>
 
-            <script src="./script/gallery.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        </footer>
+
+        <script src="./script/gallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
 </body>
